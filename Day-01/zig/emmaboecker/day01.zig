@@ -1,7 +1,7 @@
 const std = @import("std");
 
 pub fn main() !void {
-    const input = @embedFile("./input/day01.txt");
+    const input = @embedFile("./day01.txt");
 
     var lines = comptime std.mem.splitSequence(u8, input, "\n");
 
