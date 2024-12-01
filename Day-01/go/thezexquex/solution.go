@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	content, _ := os.ReadFile("input.txt")
+	content, _ := os.ReadFile("Day-01/go/thezexquex/input.txt")
 	lines := strings.Split(strings.ReplaceAll(string(content), "\r\n", "\n"), "\n")
 	numsLeft := make([]int, len(lines))
 	numsRight := make([]int, len(lines))
