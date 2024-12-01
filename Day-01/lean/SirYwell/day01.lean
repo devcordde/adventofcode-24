@@ -5,7 +5,7 @@ def p2 (left: List Nat) (right: List Nat) : Nat :=
   left.foldl (fun acc elem => acc + right.count elem * elem) 0
 
 def main : IO Unit := do
-  let file <- IO.FS.readFile "input/day01.txt"
+  let file <- IO.FS.readFile "day01.txt"
   let lines := file.splitOn "\n"
   let listOfPairs := lines.map (String.splitOn . "   ")
   let left := listOfPairs.map (.[0]! |>.toNat!) |>.mergeSort
