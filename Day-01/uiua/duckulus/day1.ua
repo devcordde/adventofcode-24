@@ -1,5 +1,5 @@
 # Experimental!
-&fras "./inputs/day1.txt"
+&fras "./day1.txt"
 
 ⊜∘≠@\n.
 ≡(⊜⋕¬⦷@ .)
