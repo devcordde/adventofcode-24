@@ -10,11 +10,9 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                             | Python | Java |
-|--------------------------------------|------------|--------|
-| 01 - ???                                 | ❌         | ❌    |
-
-<!-- | XX - Day | ❌         | ❌    | -->
+| Day/Lang                | Python | Java | Rust | C | Dart | Go | Haskell | Zig | Lean | Uiua |
+|-------------------------|--------|------|------|---|------|----|---------|-----|------|------|
+| 01 - Historian Hysteria | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅   | ✅    | ✅    |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
