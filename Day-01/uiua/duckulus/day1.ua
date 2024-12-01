@@ -6,6 +6,6 @@
 ⍉
 
 PartOne ← ⌵/-≡⍆
-PartTwo ← ×⟜(≡/+⊞=)⊃⊢⊣
+PartTwo ← ×≡/+⊞=,⊃⊣⊢
 
 ≡/+[⊃PartOne PartTwo]
