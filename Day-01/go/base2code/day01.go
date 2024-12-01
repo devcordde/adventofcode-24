@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	content, _ := os.ReadFile("day01/input.txt")
+	content, _ := os.ReadFile("input.txt")
 	lines := strings.Split(string(content), "\n")
 	var left = make([]int, len(lines))
 	var right = make([]int, len(lines))
