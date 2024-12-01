@@ -22,7 +22,7 @@ func main() {
 	slices.Sort(numsLeft)
 	slices.Sort(numsRight)
 	fmt.Printf("Day 1 -> Task 1: " + strconv.FormatFloat(sumDiff(numsLeft, numsRight), 'f', 0, 64) + "\n")
-	fmt.Printf("Day 1 -> Task 1: " + strconv.FormatInt(int64(simScore(numsLeft, numsRight)), 10))
+	fmt.Printf("Day 1 -> Task 2: " + strconv.FormatInt(int64(simScore(numsLeft, numsRight)), 10))
 }
 
 func sumDiff(left, right []int) float64 {
