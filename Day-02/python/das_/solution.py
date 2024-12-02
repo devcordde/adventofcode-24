@@ -11,11 +11,7 @@ for report in reports:
     if safe(report):
         counter = [e + 1 for e in counter]
     else:
-        for i in range(len(report)):
-            del (o := report.copy())[i]
-            if safe(o):
-                counter[1] += 1
-                break
+        counter[1] += 1 if any(safe(report[:i] + report[(i + 1):]) for i in range(len(report))) else 0
 
 print("Part 1:", counter[0])
 print("Part 2:", counter[1])
