@@ -6,7 +6,7 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) throws IOException {
-        var lines = Files.readAllLines(Path.of("index.txt")).stream()
+        var lines = Files.readAllLines(Path.of("input.txt")).stream()
                 .map(string -> Arrays.stream(string.split(" ")).map(Integer::parseInt).toList()).toList();
 
         System.out.println("Day 2 -> Task 1: " + secure(lines, false));
