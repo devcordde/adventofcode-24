@@ -10,10 +10,11 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                | Python | Java | Rust | C | Dart | Go | Haskell | Zig | Lean | Uiua | R | TypeScript | JavaScript | Ruby |
-|-------------------------|--------|------|------|---|------|----|---------|-----|------|------|---|------------|------------|------|
-| 01 - Historian Hysteria | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅   | ✅    | ✅    | ✅ | ✅          | ✅          | ✅    |
-| 02 - Red-Nosed Reports  | ✅      | ✅    | ❌    | ✅ | ✅    | ✅  | ✅       | ❌   | ✅    | ✅    | ✅ | ✅          | ❌          | ✅    |
+| Day/Lang                | Python | Java | Rust | C | Dart | Go | Haskell | Lean | Uiua | R | TypeScript | Ruby | JavaScript | Zig | Bash |
+|-------------------------|--------|------|------|---|------|----|---------|------|------|---|------------|------|------------|-----|------|
+| 01 - Historian Hysteria | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ✅          | ✅   | ❌    |
+| 02 - Red-Nosed Reports  | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌          | ❌   | ❌    |
+| 03 - Mull It Over       | ✅      | ✅    | ✅    | ✅ | ✅    | ❌  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌          | ❌   | ✅    |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
@@ -31,7 +32,7 @@ Here is a list of all programming languages used by the contributors and the day
 
 (2) Jeder Tag hat Unterordner für jede Programmiersprache, die Beitragende zur Lösung dieses Tages verwendet haben. Dabei ist für den Namen des Ordners der kleingeschriebene Name der Sprache zu verwenden, also beispielsweise `java`.
 
-(3) Mehrere Beitragende können einen Tag in der selben Programmiersprache lösen, weshalb jeder einen Ordner für seine Lösung erstellen sollte. Dieser enthält den Quellcode, welcher bestenfalls beide Teilaufgaben löst.
+(3) Mehrere Beitragende können einen Tag in derselben Programmiersprache lösen, weshalb jeder einen Ordner für seine Lösung erstellen sollte. Dieser enthält den Quellcode, welcher bestenfalls beide Teilaufgaben löst.
 
 (4) Der *shared*-Ordner ist für alle zusätzlichen Dateien, die neben der Lösungsdatei benötigt werden, etwa Hilfscode oder geteilte Bibliotheken.
 
