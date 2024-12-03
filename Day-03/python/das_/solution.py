@@ -9,11 +9,9 @@ def calculate_result(acc, element):
         return False, acc[1], acc[2]
     elif element == "do()":
         return True, acc[1], acc[2]
-    elif acc[0]:
-        value = multiply(element)
-        return acc[0], acc[1] + value, acc[2] + value
-    else:
-        return acc
+
+    value = multiply(element)
+    return acc[0], acc[1] + value, acc[2] + (value if acc[0] else 0)
 
 statements = findall(r"(do\(\)|don't\(\)|mul\(\d{1,3},\d{1,3}\))", "".join(open("input.txt").readlines()))
 result = reduce(calculate_result, statements, (True, 0, 0))
