@@ -3,7 +3,7 @@ from typing import List, Tuple
 from shared.paul2708.input_reader import *
 from shared.paul2708.output import *
 
-grid = [list(line) for line in read_plain_input(day=4, example=1)]
+grid = [list(line) for line in read_plain_input(day=4, example=None)]
 
 
 def search_word(indices: List[Tuple[int, int]]) -> bool:
@@ -18,9 +18,9 @@ def search_word(indices: List[Tuple[int, int]]) -> bool:
             if grid[x][y] != "XMAS"[i]:
                 return False
 
-        i += 1
+            i += 1
 
-    return i == 3
+    return i == 4
 
 
 def search_words(i: int, j: int) -> int:
@@ -37,7 +37,7 @@ def search_words(i: int, j: int) -> int:
     # Diagonal
     if search_word([(i, j), (i + 1, j + 1), (i + 2, j + 2), (i + 3, j + 3)]):
         total += 1
-    if search_word([(i, j), (i - 1, j - 1), (i - 2, j - 2), (i - 3, j - 3)]):
+    if search_word([(i, j), (i + 1, j - 1), (i + 2, j - 2), (i + 3, j - 3)]):
         total += 1
 
     # Horizontal
@@ -51,7 +51,7 @@ def search_words(i: int, j: int) -> int:
     # Diagonal
     if search_word(list(reversed([(i, j), (i + 1, j + 1), (i + 2, j + 2), (i + 3, j + 3)]))):
         total += 1
-    if search_word(list(reversed([(i, j), (i - 1, j - 1), (i - 2, j - 2), (i - 3, j - 3)]))):
+    if search_word(list(reversed([(i, j), (i + 1, j - 1), (i + 2, j - 2), (i + 3, j - 3)]))):
         total += 1
 
     return total
