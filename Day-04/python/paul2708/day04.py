@@ -1,69 +1,60 @@
 from typing import List, Tuple
 
 from shared.paul2708.input_reader import *
-from shared.paul2708.output import *
+from shared.paul2708.output import write
 
-grid = [list(line) for line in read_plain_input(day=4, example=None)]
-
-
-def search_word(indices: List[Tuple[int, int]]) -> bool:
-    if len(indices) != 4:
-        raise Exception("Invalid indices")
-
-    i = 0
-    for coordinates in indices:
-        x, y = coordinates
-
-        if 0 <= x < len(grid) and 0 <= y < len(grid[0]):
-            if grid[x][y] != "XMAS"[i]:
-                return False
-
-            i += 1
-
-    return i == 4
+grid = [list(line) for line in read_plain_input(day=4)]
 
 
-def search_words(i: int, j: int) -> int:
-    total = 0
+# Part 1
+def search_xmas(indices: List[Tuple[int, int]]) -> bool:
+    idx = 0
+    for i, j in indices:
+        if 0 <= i < len(grid) and 0 <= j < len(grid[0]) and grid[i][j] == "XMAS"[idx]:
+            idx += 1
 
-    # Horizontal
-    if search_word([(i, j), (i, j + 1), (i, j + 2), (i, j + 3)]):
-        total += 1
-
-    # Vertical
-    if search_word([(i, j), (i + 1, j), (i + 2, j), (i + 3, j)]):
-        total += 1
-
-    # Diagonal
-    if search_word([(i, j), (i + 1, j + 1), (i + 2, j + 2), (i + 3, j + 3)]):
-        total += 1
-    if search_word([(i, j), (i + 1, j - 1), (i + 2, j - 2), (i + 3, j - 3)]):
-        total += 1
-
-    # Horizontal
-    if search_word(list(reversed([(i, j), (i, j + 1), (i, j + 2), (i, j + 3)]))):
-        total += 1
-
-    # Vertical
-    if search_word(list(reversed([(i, j), (i + 1, j), (i + 2, j), (i + 3, j)]))):
-        total += 1
-
-    # Diagonal
-    if search_word(list(reversed([(i, j), (i + 1, j + 1), (i + 2, j + 2), (i + 3, j + 3)]))):
-        total += 1
-    if search_word(list(reversed([(i, j), (i + 1, j - 1), (i + 2, j - 2), (i + 3, j - 3)]))):
-        total += 1
-
-    return total
+    return idx == 4
 
 
-write_2d_array(grid)
-total = 0
-for i in range(len(grid)):
-    for j in range(len(grid[i])):
-        total += search_words(i, j)
+def search_in_all_directions(i: int, j: int) -> int:
+    indices_to_check = [
+        # Horizontal
+        [(i, j + delta) for delta in range(0, 4)],
+        # Vertical
+        [(i + delta, j) for delta in range(0, 4)],
+        # Diagonal (left-to-right)
+        [(i + delta, j + delta) for delta in range(0, 4)],
+        # Diagonal (right-to-left)
+        [(i + delta, j - delta) for delta in range(0, 4)],
+    ]
+    indices_to_check = indices_to_check + list(map(reversed, indices_to_check))
 
-print(total)
+    return len(list(filter(search_xmas, indices_to_check)))
 
 
+# Part 2
+def matches_xmas(i: int, j: int) -> bool:
+    if 0 <= i + 2 < len(grid) and 0 <= j + 2 < len(grid[0]):
+        if grid[i + 1][j + 1] != "A":
+            return False
+        if ((grid[i][j] == "M" and grid[i + 2][j + 2] == "S") or (
+                grid[i][j] == "S" and grid[i + 2][j + 2] == "M")) and (
+                (grid[i][j + 2] == "M" and grid[i + 2][j] == "S") or (grid[i][j + 2] == "S" and grid[i + 2][j] == "M")):
+            return True
 
+    return False
+
+
+# Run both parts
+xmas_counter = 0
+x_counter = 0
+
+for x in range(len(grid)):
+    for y in range(len(grid[x])):
+        xmas_counter += search_in_all_directions(x, y)
+
+        if matches_xmas(x, y):
+            x_counter += 1
+
+write(f"There are a total of <{xmas_counter}> XMAS variations hidden.")
+write(f"There are a total of <{x_counter}> X-formatted MAS variations hidden.")
