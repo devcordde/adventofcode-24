@@ -10,12 +10,13 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                | Python | Java | Rust | C | Dart | Go | Haskell | Lean | Uiua | R | TypeScript | Ruby | Bash | JavaScript | Zig |
-|-------------------------|--------|------|------|---|------|----|---------|------|------|---|------------|------|------|------------|-----|
-| 01 - Historian Hysteria | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌    | ✅          | ✅   |
-| 02 - Red-Nosed Reports  | ✅      | ✅    | ✅    | ✅ | ✅    | ✅  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌    | ❌          | ❌   |
-| 03 - Mull It Over       | ✅      | ✅    | ✅    | ✅ | ✅    | ❌  | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ✅    | ❌          | ❌   |
-| 04 - Ceres Search       | ✅      | ❌    | ✅    | ✅ | ✅    | ❌  | ✅       | ✅    | ✅    | ❌ | ✅          | ❌    | ✅    | ❌          | ❌   |
+| Day/Lang                | Python | Java | Rust | C | Dart | Haskell | Lean | Uiua | R | TypeScript | Ruby | Go | Bash | JavaScript | Zig |
+|-------------------------|--------|------|------|---|------|---------|------|------|---|------------|------|----|------|------------|-----|
+| 01 - Historian Hysteria | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ✅  | ❌    | ✅          | ✅   |
+| 02 - Red-Nosed Reports  | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ✅  | ❌    | ❌          | ❌   |
+| 03 - Mull It Over       | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌  | ✅    | ❌          | ❌   |
+| 04 - Ceres Search       | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ❌    | ❌  | ✅    | ❌          | ❌   |
+| 05 - Print Queue        | ✅      | ❌    | ❌    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
