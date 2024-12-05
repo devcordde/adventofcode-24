@@ -10,15 +10,12 @@ for rule in rules:
 
 part1, part2 = 0, 0
 for update in updates:
-    valid, swapped = False, False
-    while not valid:
-        valid = True
-        for i in range(len(update) - 1):
-            for j in range(i + 1, len(update)):
-                if update[j] in predecessors.get(update[i], []):
-                    swapped, valid, ind = True, False, j
-                    update[i], update[ind] = update[ind], update[i]
-                    break
+    swapped = False
+    for i in range(len(update) - 1):
+        for j in range(i + 1, len(update)):
+            if update[j] in predecessors.get(update[i], []):
+                swapped, ind = True, j
+                update[i], update[ind] = update[ind], update[i]
 
     if swapped:
         part2 += update[int(len(update) / 2)]
