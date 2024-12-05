@@ -1,7 +1,5 @@
-import re
-
 content = open("input.txt").read().split("\n\n")
-rules = [list(map(int, re.findall(r"(\d+)\|(\d+)", line)[0])) for line in content[0].splitlines()]
+rules = [tuple(map(int, line.split("|"))) for line in content[0].splitlines()]
 updates = [list(map(int, line.split(","))) for line in content[1].splitlines()]
 
 predecessors = dict()
@@ -14,8 +12,8 @@ for update in updates:
     for i in range(len(update) - 1):
         for j in range(i + 1, len(update)):
             if update[j] in predecessors.get(update[i], []):
-                swapped, ind = True, j
-                update[i], update[ind] = update[ind], update[i]
+                swapped = True
+                update[i], update[j] = update[j], update[i]
 
     if swapped:
         part2 += update[int(len(update) / 2)]
