@@ -17,6 +17,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 03 - Mull It Over       | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌  | ✅    | ❌          | ❌   |
 | 04 - Ceres Search       | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ❌    | ❌  | ✅    | ❌          | ❌   |
 | 05 - Print Queue        | ✅      | ❌    | ❌    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 06 - Guard Gallivant    | ✅      | ❌    | ❌    | ✅ | ✅    | ❌       | ❌    | ❌    | ❌ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
