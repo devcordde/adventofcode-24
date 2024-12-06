@@ -1,59 +1,77 @@
-from typing import List
+from typing import List, Tuple
 
-from functools import cmp_to_key
+from tqdm import tqdm
 
 from shared.paul2708.input_reader import *
 from shared.paul2708.output import *
 
-lines = read_plain_input(day=6, example=None)
+lines = read_plain_input(day=6)
 grid = [list(line) for line in lines]
 
 
-def find_start():
+def find_start_location() -> Tuple[int, int, Tuple[int, int]]:
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if grid[i][j] == "^":
-                return i, j
+                return i, j, (-1, 0)
+
+    raise Exception("could not find start position")
 
 
-start_position = find_start()
-write_2d_array(grid)
-
-
-def rotate(x, y):
-    if x == -1 and y == 0:
-        return 0, 1
-    if x == 0 and y == 1:
-        return 1, 0
-    if x == 1 and y == 0:
-        return 0, -1
-
-    return -1, 0
-
-
-def next_step(i, j, direction):
+def next_location(x, y, direction) -> Tuple[int, int, Tuple[int, int]]:
     x_delta, y_delta = direction
 
-    if 0 <= i + x_delta < len(grid) and 0 <= j + y_delta < len(grid[0]):
-        if grid[i + x_delta][j + y_delta] == ".":
-            return i + x_delta, j + y_delta, direction
+    if 0 <= x + x_delta < len(grid) and 0 <= y + y_delta < len(grid[0]):
+        if grid[x + x_delta][y + y_delta] == ".":
+            return x + x_delta, y + y_delta, direction
         else:
-            return i, j, rotate(*direction)
+            return x, y, (y_delta, -x_delta)
 
     return -1, -1, direction
 
 
-direction = (-1, 0)
-i, j = start_position
+start_location = find_start_location()
 
-grid[i][j] = "."
+# Part 1
+x, y, direction = start_location
 
-places = set()
-places.add((i, j))
+grid[x][y] = "."
 
-while i != -1:
-    i, j, direction = next_step(i, j, direction)
-    places.add((i, j))
+positions = set()
+while x != -1:
+    x, y, direction = next_location(x, y, direction)
+    positions.add((x, y))
 
-print(i, j, direction)
-print(len(places))
+write(f"The guard visits <{len(positions)}> distinct positions.")
+
+
+# Part 2
+def runs_into_cycle(x, y, direction):
+    locations = set()
+    locations.add((x, y, direction))
+
+    while x != -1:
+        x, y, direction = next_location(x, y, direction)
+
+        if (x, y, direction) in locations:
+            return True
+
+        locations.add((x, y, direction))
+
+    return False
+
+
+obstacles = 0
+for x in tqdm(range(len(grid))):
+    for y in range(len(grid[0])):
+        if grid[x][y] in ["#", "^"]:
+            continue
+
+        grid[x][y] = "#"
+
+        if runs_into_cycle(*start_location):
+            obstacles += 1
+
+        grid[x][y] = "."
+
+write(f"<{obstacles}> new obstacles would lead to cycles.")
