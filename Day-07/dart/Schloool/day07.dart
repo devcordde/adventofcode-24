@@ -35,39 +35,34 @@ void main() async {
     return combinations;
   }
 
-  final getEquationsWithSolution = (List<String> operators) => equations.where((equation) {
-    final numCount = equation.numbers.length;
-    final operatorCombinations = generateOperatorCombinations(numCount - 1, operators);
+  final getSolvableEquationSum = (List<String> operators) {
+    return equations.where((equation) {
+      final numCount = equation.numbers.length;
+      final operatorCombinations = generateOperatorCombinations(numCount - 1, operators);
 
-    for (var combination in operatorCombinations) {
-      var result = equation.numbers[0];
-      for (var i = 0; i < combination.length; i++) {
-        final operator = combination[i];
-        final nextNumber = equation.numbers[i + 1];
-        if (operator == '+') {
-          result += nextNumber;
-        } else if (operator == '*') {
-          result *= nextNumber;
-        } else if (operator == '||') {
-          result = int.parse('$result$nextNumber');
+      for (var combination in operatorCombinations) {
+        var result = equation.numbers[0];
+        for (var i = 0; i < combination.length; i++) {
+          final operator = combination[i];
+          final nextNumber = equation.numbers[i + 1];
+          if (operator == '+') {
+            result += nextNumber;
+          } else if (operator == '*') {
+            result *= nextNumber;
+          } else if (operator == '||') {
+            result = int.parse('$result$nextNumber');
+          }
+        }
+
+        if (result == equation.result) {
+          return true;
         }
       }
 
-      if (result == equation.result) {
-        return true;
-      }
-    }
+      return false;
+    }).map((e) => e.result).reduce((a, b) => a + b);
+  };
 
-    return false;
-  });
-
-  final combinedSumDefault = getEquationsWithSolution(['+', '*'])
-      .map((e) => e.result)
-      .reduce((a, b) => a + b);
-  print('Part 1: $combinedSumDefault');
-
-  final combinedSumConcatenation = getEquationsWithSolution(['+', '*', '||'])
-      .map((e) => e.result)
-      .reduce((a, b) => a + b);
-  print('Part 2: $combinedSumConcatenation');
+  print('Part 1: ${getSolvableEquationSum(['+', '*'])}');
+  print('Part 2: ${getSolvableEquationSum(['+', '*', '||'])}');
 }
