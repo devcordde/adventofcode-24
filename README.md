@@ -16,8 +16,9 @@ Here is a list of all programming languages used by the contributors and the day
 | 02 - Red-Nosed Reports  | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ✅  | ❌    | ❌          | ❌   |
 | 03 - Mull It Over       | ✅      | ✅    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ✅    | ❌  | ✅    | ❌          | ❌   |
 | 04 - Ceres Search       | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ✅          | ❌    | ❌  | ✅    | ❌          | ❌   |
-| 05 - Print Queue        | ✅      | ❌    | ❌    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
-| 06 - Guard Gallivant    | ✅      | ❌    | ❌    | ✅ | ✅    | ❌       | ❌    | ❌    | ❌ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 05 - Print Queue        | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ✅    | ✅    | ✅ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 06 - Guard Gallivant    | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ❌    | ❌    | ❌ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 07 - Bridge Repair      | ✅      | ❌    | ✅    | ✅ | ✅    | ✅       | ❌    | ❌    | ❌ | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
