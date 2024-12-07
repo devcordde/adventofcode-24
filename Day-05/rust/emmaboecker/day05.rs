@@ -1,7 +1,7 @@
 use std::cmp::Ordering;
 
 pub fn main() {
-    let input = include_str!("../../input/day05.txt");
+    let input = include_str!("day05.txt");
 
     let (rules, pages) = input.split_at(input.find("\r\n\r\n").unwrap());
 

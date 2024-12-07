@@ -30,7 +30,7 @@ impl Direction {
 }
 
 pub fn main() {
-    let input = include_str!("../../input/day06.txt");
+    let input = include_str!("day06.txt");
 
     let matrix = input
         .lines()

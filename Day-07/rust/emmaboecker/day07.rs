@@ -1,5 +1,5 @@
 pub fn main() {
-    let input = include_str!("../../input/day07.txt");
+    let input = include_str!("day07.txt");
 
     let calibrations = input
         .lines()
