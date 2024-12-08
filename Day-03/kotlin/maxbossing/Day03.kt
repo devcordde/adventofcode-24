@@ -1,4 +1,7 @@
-class Day03(val input: String) {
+import java.nio.file.Path
+
+class Day03 {
+    private val input = Path("day03.txt").readText()
     private fun parseMultiplication(str: String): Int =
         str.trim { !it.isDigit() && it != ',' }
             .split(",")

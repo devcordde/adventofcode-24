@@ -1,6 +1,9 @@
+import java.nio.file.Path
 import kotlin.math.abs
 
-class Day01(private val input: List<String>) {
+class Day01 {
+
+    private val input = Path("day01.txt").lines()
 
     private val list1 = mutableListOf<Int>()
     private val list2 = mutableListOf<Int>()

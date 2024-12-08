@@ -1,7 +1,9 @@
 import kotlin.math.abs
 import shared.removeAt
+import java.nio.file.Path
 
-class Day02(val input: List<String>) {
+class Day02 {
+    private val input = Path("day02.txt").readText().lines()
     private val rows = input.map { it.split(" ").map { it.toInt() } }
 
     fun part1() = rows.count {

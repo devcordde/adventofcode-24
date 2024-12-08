@@ -1,8 +1,10 @@
 import shared.enumCombinationSequence
+import java.nio.file.Path
 
 private typealias Calculation = Pair<Long, List<Long>>
 
-class Day07(private val input: List<String>) {
+class Day07 {
+    private val input = Path("day07.txt").readText().lines()
     private enum class Operation(val reduceAction: (Long, Long) -> Long) {
         PLUS({i, j -> i+j}),
         MUL({i, j -> i*j}),
