@@ -1,5 +1,7 @@
+import java.nio.file.Path
 
-class Day06(var input: List<String>) {
+class Day06 {
+    private val input = Path("day06.txt").readText().lines()
 
     private val guardChars = charArrayOf('^', 'v', '<', '>')
 

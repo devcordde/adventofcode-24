@@ -1,4 +1,8 @@
-class Day05(val input: String) {
+import java.nio.file.Path
+
+class Day05 {
+    private val input = Path("day05.txt").readText()
+
     val rules = input
         .split(Regex("\\R\\s*\\R"))
         .toList()[0]
