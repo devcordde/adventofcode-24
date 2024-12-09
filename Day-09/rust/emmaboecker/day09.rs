@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 
 pub fn main() {
-    let input = include_str!("../../input/day09.txt");
+    let input = include_str!("day09.txt");
 
     let mut disk_map = vec![];
 
