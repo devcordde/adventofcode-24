@@ -31,13 +31,13 @@ def count_reached_hiking_ends(x: int, y: int) -> Set[Tuple[int, int]]:
     return ends
 
 
-total = 0
+scores = 0
 for i in range(len(hiking_map)):
     for j in range(len(hiking_map[0])):
         if hiking_map[i][j] == 0:
-            total += len(count_reached_hiking_ends(i, j))
+            scores += len(count_reached_hiking_ends(i, j))
 
-write(f"The sum of the <scores> of all trailheads is <{total}>.")
+write(f"The sum of the <scores> of all trailheads is <{scores}>.")
 
 
 # Part 2
