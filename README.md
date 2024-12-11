@@ -22,6 +22,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 08 - Resonant Collinearity | ✅      | ✅ | ❌    | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 | 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 | 10 - Hoof It               | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
