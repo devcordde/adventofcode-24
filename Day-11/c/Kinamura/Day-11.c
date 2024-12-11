@@ -34,7 +34,7 @@ Node* parseInput(char* line) {
 		if (!head) {
 			head = newNode;
 		} else {
-			current->next = newNode;
+		current->next = newNode;
 		}
 		current = newNode;
 		pos = end;
@@ -69,7 +69,7 @@ void doLoop(Node * head) {
 			Node* newNode = (Node*)malloc(sizeof(Node));
 			newNode->value = value % divisor;
 			head->value = value / divisor;
-            newNode->occurrences = head->occurrences;
+        	newNode->occurrences = head->occurrences;
 			newNode->next = head->next;
 			head->next = newNode;
 			head = newNode->next;
