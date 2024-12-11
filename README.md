@@ -1,8 +1,8 @@
 # adventofcode-24
 
-Ein Sammel-Repository für [Advent of Code 2024](https://adventofcode.com/2024)-Lösungen von Mitgliedern der deutschen [DevCord](https://discord.gg/tNMq2K4)-Discord-Community.
+Ein Sammel-Repository für [Advent of Code 2024](https://adventofcode.com/2024)-Lösungen von Mitgliedern der deutschen [DevCord](https://discord.gg/devcordde)-Discord-Community.
 
-A repository collecting [Advent of Code 2024](https://adventofcode.com/2024) solutions made by members of the German [DevCord](https://discord.gg/tNMq2K4) Discord community.
+A repository collecting [Advent of Code 2024](https://adventofcode.com/2024) solutions made by members of the German [DevCord](https://discord.gg/devcordde) Discord community.
 
 ## Lösungen / Solutions
 
@@ -22,6 +22,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 08 - Resonant Collinearity | ✅      | ✅ | ❌    | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 | 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 | 10 - Hoof It               | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
+| 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌  | ❌    | ❌          | ❌   |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
