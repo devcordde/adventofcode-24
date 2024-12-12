@@ -1,21 +1,21 @@
 grid = open("input.txt").read().splitlines()
 
-def solve(row, column, target, s, direction=(0, 0)):
+def solve(row, column, target, plot_positions, direction=(0, 0)):
     if not (0 <= row < len(grid) and 0 <= column < len(grid[0])):
         return frozenset(), [((row, column), direction)]
 
-    if (row, column) in s:
+    if (row, column) in plot_positions:
         return frozenset(), []
 
     fences = []
     if grid[row][column] == target:
-        s.add((row, column))
+        plot_positions.add((row, column))
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
-            fences += solve(row + dx, column + dy, target, s, (dx, dy))[1]
+            fences += solve(row + dx, column + dy, target, plot_positions, (dx, dy))[1]
     else:
         fences.append(((row, column), direction))
 
-    return s, fences
+    return plot_positions, fences
 
 positions = set()
 plots = dict()
@@ -24,13 +24,13 @@ for i in range(len(grid)):
         if (i, j) in positions:
             continue
 
-        o = solve(i, j, grid[i][j], set())
-        for x in o[0]:
+        plot = solve(i, j, grid[i][j], set())
+        for x in plot[0]:
             positions.add(x)
 
-        plots.setdefault(grid[i][j], []).append(o)
+        plots.setdefault(grid[i][j], []).append(plot)
 
-part1 = sum(len(value[0]) * len(value[1]) for k in plots for value in plots[k])
+part1 = sum(len(value[0]) * len(value[1]) for plot in plots for value in plots[plot])
 print("Part 1:", part1)
 
 part2 = 0
