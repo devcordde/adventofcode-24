@@ -24,6 +24,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 10 - Hoof It               | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 12 - Garden Groups         | ✅      | ✅ | ✅    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 13 - Claw Contraption      | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
