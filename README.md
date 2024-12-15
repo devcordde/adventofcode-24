@@ -20,11 +20,12 @@ Here is a list of all programming languages used by the contributors and the day
 | 06 - Guard Gallivant       | ✅      | ✅ | ✅    | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 07 - Bridge Repair         | ✅      | ✅ | ❌    | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 08 - Resonant Collinearity | ✅      | ✅ | ❌    | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 10 - Hoof It               | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 | 12 - Garden Groups         | ✅      | ✅ | ✅    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 13 - Claw Contraption      | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 13 - Claw Contraption      | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 14 - Restroom Redoubt      | ✅      | ✅ | ✅    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
