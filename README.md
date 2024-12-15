@@ -10,22 +10,23 @@ Hier ist eine Liste mit allen von Beitragenden verwendeten Programmiersprachen u
 
 Here is a list of all programming languages used by the contributors and the days that were solved with them:
 
-| Day/Lang                   | Python | C | Java | Rust | Dart | Haskell | Kotlin | Lean | Uiua | R | Elixir | TypeScript | Ruby | Zig | Go | Bash | JavaScript |
-|----------------------------|--------|---|------|------|------|---------|--------|------|------|---|--------|------------|------|-----|----|------|------------|
-| 01 - Historian Hysteria    | ✅      | ✅ | ✅    | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅      | ✅          | ✅    | ✅   | ✅  | ❌    | ✅          |
-| 02 - Red-Nosed Reports     | ✅      | ✅ | ✅    | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅      | ✅          | ✅    | ✅   | ✅  | ❌    | ❌          |
-| 03 - Mull It Over          | ✅      | ✅ | ✅    | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅      | ✅          | ✅    | ✅   | ❌  | ✅    | ❌          |
-| 04 - Ceres Search          | ✅      | ✅ | ❌    | ✅    | ✅    | ✅       | ❌      | ✅    | ✅    | ✅ | ❌      | ✅          | ❌    | ❌   | ❌  | ✅    | ❌          |
-| 05 - Print Queue           | ✅      | ✅ | ❌    | ✅    | ✅    | ✅       | (✅)    | ✅    | (✅)  | ✅ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 06 - Guard Gallivant       | ✅      | ✅ | ✅    | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 07 - Bridge Repair         | ✅      | ✅ | ❌    | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 08 - Resonant Collinearity | ✅      | ✅ | ❌    | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 10 - Hoof It               | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 12 - Garden Groups         | ✅      | ✅ | ✅    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 13 - Claw Contraption      | ✅      | ✅ | ❌    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ✅      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
-| 14 - Restroom Redoubt      | ✅      | ✅ | ✅    | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌      | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| Day/Lang                   | Python | C | Java | Elixir | Rust | Dart | Haskell | Kotlin | Lean | Uiua | R | TypeScript | Ruby | Zig | Go | Bash | JavaScript |
+|----------------------------|--------|---|------|--------|------|------|---------|--------|------|------|---|------------|------|-----|----|------|------------|
+| 01 - Historian Hysteria    | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ✅  | ❌    | ✅          |
+| 02 - Red-Nosed Reports     | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ✅  | ❌    | ❌          |
+| 03 - Mull It Over          | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ❌  | ✅    | ❌          |
+| 04 - Ceres Search          | ✅      | ✅ | ❌    | ❌      | ✅    | ✅    | ✅       | ❌      | ✅    | ✅    | ✅ | ✅          | ❌    | ❌   | ❌  | ✅    | ❌          |
+| 05 - Print Queue           | ✅      | ✅ | ❌    | ✅      | ✅    | ✅    | ✅       | (✅)    | ✅    | (✅)  | ✅ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 06 - Guard Gallivant       | ✅      | ✅ | ✅    | ❌      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 07 - Bridge Repair         | ✅      | ✅ | ❌    | ❌      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 08 - Resonant Collinearity | ✅      | ✅ | ❌    | ✅      | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 09 - Disk Fragmenter       | ✅      | ✅ | ❌    | ✅      | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 10 - Hoof It               | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 11 - Plutonian Pebbles     | ✅      | ✅ | ❌    | ❌      | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 12 - Garden Groups         | ✅      | ✅ | ✅    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 13 - Claw Contraption      | ✅      | ✅ | ❌    | ✅      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 14 - Restroom Redoubt      | ✅      | ✅ | ✅    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
+| 15 - Warehouse Woes        | ✅      | ❌ | ✅    | ✅      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌  | ❌    | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
