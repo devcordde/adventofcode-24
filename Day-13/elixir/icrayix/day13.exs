@@ -28,10 +28,12 @@ calculate_token_sum = fn machines ->
   |> Enum.sum()
 end
 
+# part 1
 machines
 |> calculate_token_sum.()
 |> IO.puts()
 
+# part 2
 machines
 |> Enum.map(fn %{a: {ax, ay}, b: {bx, by}, p: {px, py}} ->
   %{a: {ax, ay}, b: {bx, by}, p: {px + 10_000_000_000_000, py + 10_000_000_000_000}}
