@@ -52,17 +52,11 @@ def calculate_next(A, step):
 
 lines = open("input.txt").read().splitlines()
 P = list(map(int, re.findall(r"\d+", lines[4])))
-A = int(re.findall(r"\d+", lines[0])[0])
 
-print("Part 1:", ",".join(map(str, part1(A, 0, 0))))
-
-all_As = [[0]]
+all_As = [0]
 for step in reversed(P):
-    new_As = []
-    for A in all_As[0]:
-        possible_As = calculate_next(A, step)
-        new_As += possible_As
+    all_As = [new_A for A in all_As for new_A in calculate_next(A, step)]
 
-    all_As.insert(0, new_As)
-
-print("Part 2:", all_As[0][0])
+A = int(re.findall(r"\d+", lines[0])[0])
+print("Part 1:", ",".join(map(str, part1(A, 0, 0))))
+print("Part 2:", all_As[0])
