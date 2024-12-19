@@ -30,7 +30,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 16 - Reindeer Maze          | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 17 - Chronospatial Computer | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 18 - RAM Run                | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
-| 19 - Linen Layout           | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | (✅)  | ❌  | ❌          |
+| 19 - Linen Layout           | ✅      | ✅ | ❌    | ❌      | ✅    | ❌    | ❌       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | (✅)  | ❌  | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
