@@ -1,9 +1,3 @@
-from functools import cache
-
-@cache
-def is_in_bounds(x, y):
-    return 0 <= x < len(grid) and 0 <= y < len(grid[0])
-
 def find(char):
     return next((row, column) for row in range(len(grid)) for column in range(len(grid[0])) if grid[row][column] == char)
 
@@ -24,7 +18,7 @@ def bfs(pos, starting_weight=0):
 
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             new_x, new_y = location[0] + dx, location[1] + dy
-            if is_in_bounds(new_x, new_y) and grid[new_x][new_y] != "#" and (new_x, new_y) not in weights:
+            if 0 <= new_x < len(grid) and 0 <= new_y < len(grid[0]) and grid[new_x][new_y] != "#" and (new_x, new_y) not in weights:
                 locations[(new_x, new_y)] = weight + 1
 
 grid = open("input.txt").read().splitlines()
@@ -38,7 +32,7 @@ part1 = 0
 for (x, y), weight in weights.items():
     for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
         new_x, new_y = x + 2 * dx, y + 2 * dy
-        if is_in_bounds(new_x, new_y):
+        if 0 <= new_x < len(grid) and 0 <= new_y < len(grid[0]):
             if grid[x + dx][y + dy] == "#" and grid[new_x][new_y] != "#":
                 new_time = bfs((new_x, new_y), weights[(x, y)] + 2)
                 if new_time < initial_time:
@@ -55,7 +49,7 @@ valid_moves = [(dx, dy) for dx in range(-20, 21) for dy in range(-20, 21) if abs
 for pos, weight in weights.items():
     for dx, dy in valid_moves:
         new_pos = pos[0] + dx, pos[1] + dy
-        if is_in_bounds(*new_pos):
+        if 0 <= new_pos[0] < len(grid) and 0 <= new_pos[1] < len(grid[0]):
             if grid[new_pos[0]][new_pos[1]] != "#":
                 if (pos, new_pos) not in used_cheats:
                     used_cheats.add((pos, new_pos))
