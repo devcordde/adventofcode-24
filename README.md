@@ -15,13 +15,13 @@ Here is a list of all programming languages used by the contributors and the day
 | 01 - Historian Hysteria     | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ❌    | ✅  | ✅          |
 | 02 - Red-Nosed Reports      | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ❌    | ✅  | ❌          |
 | 03 - Mull It Over           | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ✅    | ✅    | ✅ | ✅          | ✅    | ✅   | ✅    | ❌  | ❌          |
-| 04 - Ceres Search           | ✅      | ✅ | ❌    | ❌      | ✅    | ✅    | ✅       | ❌      | ✅    | ✅    | ✅ | ✅          | ❌    | ❌   | ✅    | ❌  | ❌          |
+| 04 - Ceres Search           | ✅      | ✅ | ❌    | ✅      | ✅    | ✅    | ✅       | ❌      | ✅    | ✅    | ✅ | ✅          | ❌    | ❌   | ✅    | ❌  | ❌          |
 | 05 - Print Queue            | ✅      | ✅ | ❌    | ✅      | ✅    | ✅    | ✅       | (✅)    | ✅    | (✅)  | ✅ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
-| 06 - Guard Gallivant        | ✅      | ✅ | ✅    | ❌      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
-| 07 - Bridge Repair          | ✅      | ✅ | ❌    | ❌      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
+| 06 - Guard Gallivant        | ✅      | ✅ | ✅    | ✅      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
+| 07 - Bridge Repair          | ✅      | ✅ | ❌    | ✅      | ✅    | ✅    | ✅       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 08 - Resonant Collinearity  | ✅      | ✅ | ❌    | ✅      | ✅    | ❌    | ✅       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 09 - Disk Fragmenter        | ✅      | ✅ | ❌    | ✅      | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
-| 10 - Hoof It                | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
+| 10 - Hoof It                | ✅      | ✅ | ❌    | ❌      | ✅    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 11 - Plutonian Pebbles      | ✅      | ✅ | ❌    | ❌      | (✅)  | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 12 - Garden Groups          | ✅      | ✅ | ✅    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 13 - Claw Contraption       | ✅      | ✅ | ❌    | ✅      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
@@ -33,6 +33,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 19 - Linen Layout           | ✅      | ✅ | ❌    | ❌      | ✅    | ❌    | ❌       | ✅      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | (✅)  | ❌  | ❌          |
 | 20 - Race Condition         | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 21 - Keypad Conundrum       | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
+| 22 - Monkey Market          | ✅      | ✅ | ❌    | ✅      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
