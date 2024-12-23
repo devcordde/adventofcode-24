@@ -34,6 +34,7 @@ Here is a list of all programming languages used by the contributors and the day
 | 20 - Race Condition         | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 21 - Keypad Conundrum       | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 | 22 - Monkey Market          | ✅      | ✅ | ❌    | ✅      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
+| 23 - LAN Party.             | ✅      | ✅ | ❌    | ❌      | ❌    | ❌    | ❌       | ❌      | ❌    | ❌    | ❌ | ❌          | ❌    | ❌   | ❌    | ❌  | ❌          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
