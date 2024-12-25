@@ -40,4 +40,4 @@ while min != max:
         min = mid
 
 y, x = corrupted[min]
-print(f"Part 2: {x},{y}")
+print(f"Part 2: {y},{x}")
