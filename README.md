@@ -35,9 +35,9 @@ Here is a list of all programming languages used by the contributors and the day
 | 21 - Keypad Conundrum       | ✅      | ✅      | ❌      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
 | 22 - Monkey Market          | ✅      | ✅      | ✅      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
 | 23 - LAN Party.             | ✅      | ✅      | ❌      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
-| 24 - Crossed Wires          | (✅)    | (✅)    | ❌      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
+| 24 - Crossed Wires          | (✅)    | ✅      | ❌      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
 | 25 - Code Chronicle         | ✅      | ✅      | ❌      | ❌      | ❌       | ❌    | ❌    | ❌      | ❌    | ❌ | ❌     | ❌          | ❌    | ❌   | ❌     | ❌  | ❌          |
-| **Total** *(Part 1 only)*   | 24 (1) | 24 (1) | 12     | 11 (1) | 8       | 7    | 7    | 6 (1)  | 5    | 5 | 4 (1) | 4          | 3    | 3   | 2 (1) | 2  | 1          |
+| **Total** *(Part 1 only)*   | 24 (1) | 25     | 12     | 11 (1) | 8       | 7    | 7    | 6 (1)  | 5    | 5 | 4 (1) | 4          | 3    | 3   | 2 (1) | 2  | 1          |
 
 ❌   = Keine Lösung / No solution,
 ✅   = Voll gelöst / Fully solved,
